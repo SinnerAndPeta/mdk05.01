@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="AdventureWorksLT2008Entities" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="C105_01_tovar">
+    <Key>
+      <PropertyRef Name="id_tovara" />
+    </Key>
+    <Property Name="id_tovara" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_lombarda" Type="Int32" />
+    <Property Name="id_klienta" Type="Int32" />
+    <Property Name="id_sotrudnika" Type="Int32" />
+    <Property Name="id_vida" Type="Int32" />
+    <Property Name="id_statusa" Type="Int32" />
+    <Property Name="Nazvanie" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Ves" Type="Double" />
+    <Property Name="data_zaloga" Type="DateTime" Precision="0" />
+    <Property Name="data_vikupa" Type="DateTime" Precision="0" />
+    <Property Name="Chena" Type="Int32" />
+    <Property Name="Itog_chena" Type="Int32" />
+  </EntityType>
+  <EntityContainer Name="user131_dbEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="C105_01_tovar" EntityType="Self.C105_01_tovar" />
+  </EntityContainer>
+</Schema>

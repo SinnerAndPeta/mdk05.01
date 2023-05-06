@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище AdventureWorksLT2008EntitiesContainer" CdmEntityContainer="user131_dbEntities1">
+    <EntitySetMapping Name="C105_01_tovar">
+      <EntityTypeMapping TypeName="AdventureWorksLT2008Entities.C105_01_tovar">
+        <MappingFragment StoreEntitySet="105_01_tovar">
+          <ScalarProperty Name="id_tovara" ColumnName="id_tovara" />
+          <ScalarProperty Name="id_lombarda" ColumnName="id_lombarda" />
+          <ScalarProperty Name="id_klienta" ColumnName="id_klienta" />
+          <ScalarProperty Name="id_sotrudnika" ColumnName="id_sotrudnika" />
+          <ScalarProperty Name="id_vida" ColumnName="id_vida" />
+          <ScalarProperty Name="id_statusa" ColumnName="id_statusa" />
+          <ScalarProperty Name="Nazvanie" ColumnName="Nazvanie" />
+          <ScalarProperty Name="Ves" ColumnName="Ves" />
+          <ScalarProperty Name="data_zaloga" ColumnName="data_zaloga" />
+          <ScalarProperty Name="data_vikupa" ColumnName="data_vikupa" />
+          <ScalarProperty Name="Chena" ColumnName="Chena" />
+          <ScalarProperty Name="Itog_chena" ColumnName="Itog_chena" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

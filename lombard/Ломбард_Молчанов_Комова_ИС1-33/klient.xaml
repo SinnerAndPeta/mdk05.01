@@ -1,0 +1,63 @@
+﻿<Window x:Class="Ломбард_Молчанов_Комова_ИС1_33.klient"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Ломбард_Молчанов_Комова_ИС1_33"
+        mc:Ignorable="d"
+        Title="klient" Height="393" Width="800" Closing="Window_Closing">
+    <Grid Margin="0,0,0,-1">
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF60CB23" Offset="0"/>
+                <GradientStop Color="#FF2EE4D3" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <DataGrid x:Name="dataGrid1" Margin="10,10,0,184" HorizontalAlignment="Left" Width="767" Background="#FFC7C7C7" BorderBrush="Black" Foreground="Black" />
+        <Button Content="Добавить" HorizontalAlignment="Left" Margin="11,328,0,0" VerticalAlignment="Top" Width="218"  Height="20" Click="Button_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF57C8EA" Offset="0.11"/>
+                    <GradientStop Color="#FFF592FF" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button Content="Удалить" HorizontalAlignment="Left" Margin="248,284,0,0" VerticalAlignment="Top" Width="218" Height="20" Click="Button_Click_1">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF57C8EA" Offset="0.11"/>
+                    <GradientStop Color="#FFF592FF" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <TextBox HorizontalAlignment="Left" Height="19" x:Name="fio" Margin="109,184,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="19" x:Name="datarozh" Margin="109,208,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="19" x:Name="serianomer" Margin="109,232,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="19" x:Name="gorodrozh" Margin="109,256,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="19" x:Name="telephone" Margin="109,280,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="19" x:Name="email" Margin="109,304,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="11,184,0,0" TextWrapping="Wrap" Text="FIO" VerticalAlignment="Top" Height="16" Width="93"/>
+        <TextBlock HorizontalAlignment="Left" Margin="11,210,0,0" TextWrapping="Wrap" Text="Дата рождения" VerticalAlignment="Top" Height="16" Width="93"/>
+        <TextBlock HorizontalAlignment="Left" Margin="11,234,0,0" TextWrapping="Wrap" Text="Серия Номер" VerticalAlignment="Top" Height="16" Width="98"/>
+        <TextBlock HorizontalAlignment="Left" Margin="11,258,0,0" TextWrapping="Wrap" Text="Город рождения" VerticalAlignment="Top" Height="16" Width="93"/>
+        <TextBlock HorizontalAlignment="Left" Margin="11,282,0,0" TextWrapping="Wrap" Text="Телефон" VerticalAlignment="Top" Height="16" Width="93"/>
+        <TextBlock HorizontalAlignment="Left" Margin="11,306,0,0" TextWrapping="Wrap" Text="Email" VerticalAlignment="Top" Height="16" Width="93"/>
+        <TextBox HorizontalAlignment="Left" Height="19" x:Name="idklienta" Margin="346,184,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="248,184,0,0" TextWrapping="Wrap" Text="id_Клиента" VerticalAlignment="Top" Height="16" Width="93"/>
+        <TextBox HorizontalAlignment="Left" Height="19" x:Name="novieserianomer" Margin="346,209,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="19" x:Name="novienomer" Margin="346,233,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="248,209,0,0" TextWrapping="Wrap" Text="Номер телефона" VerticalAlignment="Top" Height="16" Width="93"/>
+        <TextBlock HorizontalAlignment="Left" Margin="248,235,0,0" TextWrapping="Wrap" Text="Серия Номер" VerticalAlignment="Top" Height="16" Width="93"/>
+        <Button Content="Изменить" HorizontalAlignment="Left" Margin="248,261,0,0" VerticalAlignment="Top" Width="218" Height="20" Click="Button_Click_2">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF57C8EA" Offset="0.11"/>
+                    <GradientStop Color="#FFF592FF" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <TextBox HorizontalAlignment="Left" Height="19" x:Name="idklienta_Copy" Margin="359,310,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="107" TextChanged="idklienta_Copy_TextChanged"/>
+        <TextBlock HorizontalAlignment="Left" Margin="248,311,0,0" TextWrapping="Wrap" Text="Введите фамилию" VerticalAlignment="Top" Height="16" Width="106"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Хранилище AdventureWorksLT2008Entities" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="105_01_tovar">
+    <Key>
+      <PropertyRef Name="id_tovara" />
+    </Key>
+    <Property Name="id_tovara" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_lombarda" Type="int" />
+    <Property Name="id_klienta" Type="int" />
+    <Property Name="id_sotrudnika" Type="int" />
+    <Property Name="id_vida" Type="int" />
+    <Property Name="id_statusa" Type="int" />
+    <Property Name="Nazvanie" Type="varchar" MaxLength="50" />
+    <Property Name="Ves" Type="float" />
+    <Property Name="data_zaloga" Type="date" />
+    <Property Name="data_vikupa" Type="date" />
+    <Property Name="Chena" Type="int" />
+    <Property Name="Itog_chena" Type="int" />
+  </EntityType>
+  <EntityContainer Name="Хранилище AdventureWorksLT2008EntitiesContainer">
+    <EntitySet Name="105_01_tovar" EntityType="Self.105_01_tovar" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

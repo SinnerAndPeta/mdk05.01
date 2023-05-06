@@ -1,0 +1,80 @@
+﻿<Window x:Class="Ломбард_Молчанов_Комова_ИС1_33.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Ломбард_Молчанов_Комова_ИС1_33"
+        mc:Ignorable="d"
+        Title="Меню" Height="454" Width="882">
+    <Grid Margin="-4,0,2,0">
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF60CB23" Offset="0"/>
+                <GradientStop Color="#FF2EE4D3" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+        <DataGrid Name="dataGrid1" Margin="10,10,0,248"  HorizontalAlignment="Left" Width="859" Background="#FFC7C7C7" BorderBrush="Black" Foreground="Black" />
+        <Button Content="Добавить" HorizontalAlignment="Left" Margin="125,350,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click" Height="20">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF57C8EA" Offset="0.11"/>
+                    <GradientStop Color="#FFF592FF" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button Content="Изменить" HorizontalAlignment="Left" Margin="243,239,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_1" Height="20">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF57C8EA" Offset="0.11"/>
+                    <GradientStop Color="#FFF592FF" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button Content="Удалить" HorizontalAlignment="Left" Margin="357,238,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_2" Height="20">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF57C8EA" Offset="0.11"/>
+                    <GradientStop Color="#FFF592FF" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <TextBox HorizontalAlignment="Left" Height="19" Name="idtovara" Margin="312,182,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="19" Name="idklienta" Margin="112,182,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="19" Name="Nazvanie" Margin="112,230,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="19" Name="Ves" Margin="112,254,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="19" Name="datazaloga" Margin="112,278,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="19" Name="datavikupa" Margin="112,302,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="19" Name="chena" Margin="112,326,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="243,185,0,0" TextWrapping="Wrap" Text="id_Товара" VerticalAlignment="Top" Height="16" Width="54"/>
+        <TextBlock HorizontalAlignment="Left" Margin="14,182,0,0" TextWrapping="Wrap" Text="Номер клиента" VerticalAlignment="Top" Height="16" Width="93"/>
+        <TextBlock HorizontalAlignment="Left" Margin="243,209,0,0" TextWrapping="Wrap" Text="Статус" VerticalAlignment="Top" Height="16" Width="35"/>
+        <TextBlock HorizontalAlignment="Left" Margin="14,232,0,0" TextWrapping="Wrap" Text="Название" VerticalAlignment="Top" Height="16" Width="93"/>
+        <TextBlock HorizontalAlignment="Left" Margin="14,256,0,0" TextWrapping="Wrap" Text="Вес в Гр." VerticalAlignment="Top" Height="16" Width="98"/>
+        <TextBlock HorizontalAlignment="Left" Margin="14,280,0,0" TextWrapping="Wrap" Text="Дата залога" VerticalAlignment="Top" Height="16" Width="93"/>
+        <TextBlock HorizontalAlignment="Left" Margin="14,304,0,0" TextWrapping="Wrap" Text="Дата выкупа" VerticalAlignment="Top" Height="16" Width="93"/>
+        <TextBlock HorizontalAlignment="Left" Margin="14,328,0,0" TextWrapping="Wrap" Text="Цена" VerticalAlignment="Top" Height="16" Width="93"/>
+        <TextBlock HorizontalAlignment="Left" Margin="14,206,0,0" TextWrapping="Wrap" Text="Вид" VerticalAlignment="Top" Height="16" Width="93"/>
+        <ComboBox HorizontalAlignment="Left" Name="Status" Margin="312,206,0,0" VerticalAlignment="Top" Width="120" Height="21">
+            <ComboBoxItem Content="Ожидает" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="Просрочен" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="Выкуплен" HorizontalAlignment="Left" Width="118"/>
+        </ComboBox>
+        <ComboBox HorizontalAlignment="Left" x:Name="idvida" Margin="112,206,0,0" VerticalAlignment="Top" Width="120" Height="21">
+            <ComboBoxItem Content="Техника" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="Ювелирка" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="Старинные предметы" HorizontalAlignment="Left" Width="118"/>
+        </ComboBox>
+        <Button Content="Новый клиент" HorizontalAlignment="Left" Margin="243,263,0,0" VerticalAlignment="Top" Width="189" Height="20" Click="Button_Click_3">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF57C8EA" Offset="0.11"/>
+                    <GradientStop Color="#FFF592FF" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+    </Grid>
+</Window>
